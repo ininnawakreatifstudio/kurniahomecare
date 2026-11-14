@@ -27,7 +27,9 @@ button,input,select,textarea{font-family:inherit}
 .topbar{background:#fff;border-bottom:1px solid var(--border);padding:10px 16px;position:sticky;top:0;z-index:50;box-shadow:var(--shadow)}
 .topbar-inner{max-width:1150px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
 .brand{display:flex;align-items:center;gap:10px;min-width:0}
-.logo{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;display:grid;place-items:center;font-weight:800;font-size:14px;letter-spacing:.5px;flex-shrink:0}
+/* UPDATE CSS LOGO AGAR BISA MENAMPILKAN GAMBAR */
+.logo{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;letter-spacing:.5px;flex-shrink:0;overflow:hidden}
+.logo img{width:100%;height:100%;object-fit:cover;display:block;background:#fff}
 .brand h1{font-size:16px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--text)}
 .brand p{font-size:10px;color:var(--muted);letter-spacing:.4px;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .mainnav{display:none;gap:4px;flex-wrap:wrap}
@@ -242,7 +244,11 @@ input[readonly]{background:#f8fafc!important;color:var(--primary-dark)!important
 <header class="topbar">
   <div class="topbar-inner">
     <div class="brand">
-      <div class="logo">KH</div>
+      <!-- BAGIAN LOGO YANG SUDAH DIPERBARUI -->
+      <div class="logo">
+        <!-- SILAKAN GANTI URL DI BAWAH INI DENGAN LINK RAW GAMBAR DARI GITHUB ANDA -->
+        <img src="URL_GAMBAR_LOGO_ANDA_DISINI" alt="Kurniahomecare Logo" onerror="this.style.display='none'; this.parentElement.innerHTML='KH';">
+      </div>
       <div>
         <h1>Kurniahomecare</h1>
         <p>Home Care &amp; Klinik Pratama</p>
@@ -620,7 +626,7 @@ input[readonly]{background:#f8fafc!important;color:var(--primary-dark)!important
 
 <script>
 /* ============================================================
-   KURNIAHOMECARE — v8 (Clean Form)
+   KURNIAHOMECARE — v8 (Dengan Logo)
    ============================================================ */
 
 const ICONS = {
